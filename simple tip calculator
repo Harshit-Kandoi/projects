@@ -1,0 +1,8 @@
+bill_amount = int(input("Enter amount of bill you received : "))
+number_of_people = int(input("Enter the number of people : "))
+tip_percentage = int(input("Enter the tip percentage : "))
+bill_per_person = (bill_amount/number_of_people)
+print(bill_per_person)
+tip_per_person = float(bill_per_person*tip_percentage)/100
+print("Tip contributed by a single person : " + str(tip_per_person))
+print("Total amount to be paid by a single person : " + str(bill_per_person+tip_per_person))
